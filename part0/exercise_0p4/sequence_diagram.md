@@ -29,6 +29,7 @@ sequenceDiagram
 
     Note over browser: user enters new note and hits "save"
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    Note right of browser: name of new note sent as payload
     activate server
     server-->>browser: URL redirect /exampleapp/notes
     deactivate server
